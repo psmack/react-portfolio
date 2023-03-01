@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import { AiOutlineMenu, AiOutlineClose, AiFillC } from 'react-icons/ai';
-import { FaCoffee } from "react-icons/fa";
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { FaCoffee } from "react-icons/fa"
 import { useState, useEffect } from 'react'
 
 const Navbar = () => {
