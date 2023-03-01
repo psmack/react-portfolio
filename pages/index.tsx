@@ -231,7 +231,7 @@ export default function Home() {
                   Alliance
                 </h4>
                 <div className="project-item">
-                Twitter clone for the Rebel Alliance.
+                Twitter clone application for the Rebel Alliance using Electron and Vue frameworks. Deployable on Web, Windows, and Andriod.
                 </div>
                 <div className='icon'>
                   <a href='https://github.com/psmack/alliance'><AiFillGithub /></a>
