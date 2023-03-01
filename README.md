@@ -13,6 +13,13 @@ yarn dev
 or
 pnpm dev
 ```
+Build for production:
+
+```
+npm run build
+npm run start
+```
+
 ## To-do List
 - [x] Create a basic portfolio
 - [ ] Add mobile compatibility viewing
