@@ -12,9 +12,10 @@ const Projects = () => {
         {/* Projects Content */}
         <div className='p-5 text-white z-[2] mt-auto pt-28 sm:mt-40'>
             <h2 className='text-5xl font-bold text-center'>Projects</h2>
-            <div className='grid grid-rows-none sm:grid-cols-2 px-4 pt-2 sm:gap-5 sm:px-10 sm:py-10 lg:px-36'>
+            <div className='grid grid-rows-none sm:grid-cols-2 sm:gap-y-0 sm:gap-x-4 sm:py-10'>
+            {/* <div className='grid grid-rows-none sm:grid-cols-2 px-4 pt-2 sm:gap-5 sm:px-10 sm:py-10 lg:px-36'> */}
               {/* C Projects */}
-              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-5 sm:p-10 sm:my-10'>
+              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-5 w-80 sm:p-10 sm:my-10 sm:w-96'>
               <h3 className='text-2xl font-bold text-center'>C Projects</h3>
                 <ul className="flex flex-col">
                   <Link href='https://github.com/psmack/mastermind'>
@@ -28,7 +29,7 @@ const Projects = () => {
               </div>
 
               {/* Data Analytics Projects */}
-              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-5 sm:p-10 sm:my-10'>
+              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-5 w-80 sm:p-10 sm:my-10 sm:w-96'>
               <h3 className='text-2xl font-bold text-center'>Data Analytics</h3>
                 <ul className="flex flex-col">
                   <Link href='https://github.com/psmack/python-dashboard-panel'>
@@ -42,7 +43,7 @@ const Projects = () => {
               </div>
 
               {/* Python Projects */}
-              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-10 sm:p-10'>
+              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-5 w-80 sm:p-10 sm:my-10 sm:w-96'>
                 <h3 className='text-2xl font-bold text-center'>Python Projects</h3>
                 <ul className="flex flex-col">
                     <Link href='https://github.com/psmack/Python-Mini-Projects'>
@@ -67,7 +68,7 @@ const Projects = () => {
               </div>
 
               {/* Web Dev */}
-              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-5 sm:p-10 sm:my-10'>
+              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-5 w-80 sm:p-10 sm:my-10 sm:w-96'>
               <h3 className='text-2xl font-bold text-center'>Web Dev</h3>
                 <ul className="flex flex-col">
                   <Link href='https://github.com/psmack/alliance'>
