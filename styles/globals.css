@@ -1,3 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
+
+@layer components {
+  .nav-bar {
+    @apply bg-gray-900 text-white px-0 py-5 mb-12 flex items-center justify-between md:px-1 lg:px-1 dark:bg-gray-900;
+  }
+  /* .nav-bar {
+    @apply bg-gray-900 text-white px-1 md:px-1 lg:px-1 py-5 mb-12 flex items-center justify-between dark:bg-gray-900;
+  } */
+  .footer-bar {
+    @apply bg-white flex justify-center dark:bg-gray-900;
+  }
+  .home-title {
+    @apply cursor-pointer text-xl font-burtons px-1 py-2 md:text-3xl dark:text-white;
+  }
+  .nav-button {
+    @apply cursor-pointer text-xl font-burtons px-4 py-2 border-none rounded-md ml-8 md:text-3xl dark:text-white;
+  }
+  .nav-icon {
+    @apply cursor-pointer text-2xl px-4 py-2;
+  }
+  .page-title {
+    @apply text-5xl py-2 text-blue-800 font-medium md:text-6xl  dark:text-white;
+  }
+  .page-subtitle {
+    @apply text-2xl py-2 dark:text-white;
+  }
+  .page-body {
+    @apply py-5 leading-8 text-gray-700 max-w-xl mx-auto md:text-xl dark:text-gray-300;
+  }
+  .section-content {
+    @apply min-h-screen grid h-screen place-content-center px-10 md:px-20 lg:px-40 dark:bg-gray-900;
+  }
+  .section-card {
+    @apply text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1;
+  }
+  .section-title {
+    @apply text-5xl font-burtons  dark:text-white;
+  }
+  .section-subtitle {
+    @apply text-3xl font-burtons underline py-2 dark:text-white;
+  }
+  .body-title {
+    @apply text-2xl font-burtons pt-2 dark:text-white;
+  }
+  .body-subtitle {
+    @apply text-lg font-burtons text-gray-800 dark:text-white;
+  }
+  .icon {
+    @apply text-5xl flex justify-center gap-8 py-2 text-gray-900 dark:text-gray-200;
+  }
+  .about {
+    @apply flex flex-col gap-5 lg:flex-row lg:flex-wrap;
+  }
+  .about-title {
+    @apply text-3xl font-burtons text-blue-800 py-2 dark:text-white;
+  }
+  .about-card {
+    @apply basis-1/2 flex-1 shadow-lg p-5 rounded-xl my-2 bg-white dark:bg-gray-800 text-white;
+  }
+  .about-item {
+    @apply text-2xl text-black font-burtons flex-col gap-2 py-2 dark:text-white;
+  }
+  .about-subitem {
+    @apply text-lg text-black font-burtons flex-col dark:text-white;
+  }
+  .project {
+    @apply flex flex-col gap-5 lg:flex-row lg:flex-wrap;
+  }
+  .project-title {
+    @apply text-3xl font-burtons text-blue-800 py-2 dark:text-white;
+  }
+  /* .project-card {
+    @apply text-center basis-1/3 flex-1 shadow-lg p-5 rounded-xl my-2 bg-white dark:bg-gray-800 text-white;
+  } */
+  .project-card {
+    @apply text-center basis-1/3 flex-1 my-2 bg-white dark:bg-gray-900 text-white;
+  }
+  .project-repo-card {
+    @apply text-center flex-1 shadow-lg p-5 rounded-xl my-2 bg-white dark:bg-gray-800 text-white;
+  }
+  .project-repo-title {
+    @apply text-2xl font-semibold text-black flex-col gap-2 py-3 dark:text-white;
+  }
+  .project-item {
+    @apply text-lg flex justify-center flex-wrap text-black flex-col gap-2 dark:text-white;
+  }
+  .tech-stack {
+    @apply flex flex-col gap-5 lg:flex-row lg:flex-wrap;
+  }
+  .tech-stack-title {
+    @apply text-3xl font-burtons text-blue-800 py-2 dark:text-white;
+  }
+  .tech-stack-card {
+    @apply text-center basis-1/4 flex-1 shadow-lg p-5 rounded-xl my-2 bg-white dark:bg-gray-800 text-white;
+  }
+  .tech-stack-item {
+    @apply flex justify-center flex-wrap gap-2 py-5 md:flex-row lg:flex-wrap;
+  }
+}
+
+/* 
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -40,38 +166,7 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -104,4 +199,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */
