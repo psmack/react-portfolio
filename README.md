@@ -24,3 +24,4 @@ npm run start
 - [x] Create a basic portfolio
 - [ ] Add mobile compatibility viewing
 - [ ] Add snippet/sample screenshot of projects
+- [ ] Fix scroll to function

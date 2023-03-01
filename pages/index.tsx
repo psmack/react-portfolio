@@ -32,7 +32,7 @@ import icon_rstudio from '../public/tech_stack/icon-rstudio.png'
 import icon_tableau from '../public/tech_stack/icon-tableau.png'
 import icon_vscode from '../public/tech_stack/icon-vscode.png'
 // React libraries
-import { MutableRefObject, useState } from "react"
+import { useState } from "react"
 import { useRef } from "react"
 
 
@@ -60,7 +60,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <main className=' bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'> */}
       <main className='bg-white dark:bg-gray-900'>
         <section ref={home} className='sticky top-0 z-50'>
           {/* Navigation Bar */}
@@ -236,6 +235,17 @@ export default function Home() {
                 </div>
                 <div className='icon'>
                   <a href='https://github.com/psmack/alliance'><AiFillGithub /></a>
+                </div>
+              </div>
+              <div className='project-repo-card' >
+                <h4 className='project-repo-title'>
+                  React Website
+                </h4>
+                <div className="project-item">
+                  Portfolio website using React framework.
+                </div>
+                <div className='icon'>
+                  <a href='https://github.com/psmack/react-pmcodes'><AiFillGithub /></a>
                 </div>
               </div>
             </div>
