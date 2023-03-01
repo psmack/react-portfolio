@@ -13,3 +13,7 @@ yarn dev
 or
 pnpm dev
 ```
+## To-do List
+- [x] Create a basic portfolio
+- [ ] Add mobile compatibility viewing
+- [ ] Add snippet/sample screenshot of projects
