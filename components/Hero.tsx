@@ -9,9 +9,9 @@ const Hero = ({heading, title, message}) => {
         <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]'/>
         {/* Hero Content */}
         <div className='p-5 text-white z-[2] mt-[-10rem]'>
-            <h2 className='text-5xl py-4 font-bold text-center'>{heading}</h2>
-            <p className='text-xl text-center'>{title}</p>
-            <p className='text-xl'>{message}</p>
+            <h2 className='text-4xl py-4 font-bold text-center sm:text-5xl'>{heading}</h2>
+            <p className='text-md text-center sm:text-xl'>{title}</p>
+            <p className='text-md text-center sm:text-xl'>{message}</p>
             <div className='flex items-center justify-center pt-5'>
               <Link href='https://www.linkedin.com/in/pailin-mack/'><AiFillLinkedin size={50} /></Link>
               <Link href='https://github.com/psmack'><AiFillGithub size={50} /></Link>
