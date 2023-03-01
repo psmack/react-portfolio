@@ -32,7 +32,7 @@ import icon_rstudio from '../public/tech_stack/icon-rstudio.png'
 import icon_tableau from '../public/tech_stack/icon-tableau.png'
 import icon_vscode from '../public/tech_stack/icon-vscode.png'
 // React libraries
-import { useState } from "react"
+import { MutableRefObject, useState } from "react"
 import { useRef } from "react"
 
 
@@ -94,7 +94,7 @@ export default function Home() {
             <h2 className='page-title'>Pailin Mack</h2>
             <h3 className='page-subtitle'>Developer and Coffee Enthusiast</h3>
             <p className='text-md page-body'>
-              This is my digital playground, where I share what I've learned. <br/>
+              This is my digital playground, where I share what I have learned. <br/>
               On my free time, you can find me on a hiking trail or exploring the beautiful island of Oahu. <br/>
             </p>
           </div>
