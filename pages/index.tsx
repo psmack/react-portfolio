@@ -199,13 +199,13 @@ export default function Home() {
               <h3 className="project-title">Data Analytics</h3>
               <div className='project-repo-card' >
                 <h4 className='project-repo-title'>
-                  Repo Title
+                  Dashboard Panel
                 </h4>
                 <div className="project-item">
-                  Description
+                  Interactive analytic visualization dashboard in Python.
                 </div>
                 <div className='icon'>
-                  <a href='https://github.com/psmack'><AiFillGithub /></a>
+                  <a href='https://github.com/psmack/python-dashboard-panel'><AiFillGithub /></a>
                 </div>
               </div>
             </div>
@@ -214,13 +214,13 @@ export default function Home() {
               <h3 className="project-title">C Projects</h3>
               <div className='project-repo-card' >
                 <h4 className='project-repo-title'>
-                  Repo Title
+                  Mastermind
                 </h4>
                 <div className="project-item">
-                  Description
+                  Mastermind game written in C.
                 </div>
                 <div className='icon'>
-                  <a href='https://github.com/psmack'><AiFillGithub /></a>
+                  <a href='https://github.com/psmack/mastermind'><AiFillGithub /></a>
                 </div>
               </div>
             </div>
