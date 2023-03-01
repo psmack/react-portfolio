@@ -4,7 +4,7 @@ import Hero from '../components/Hero'
 
 const about = () => {
   return (
-    <div>
+    <div id='about'>
         <About />
     </div>
     
