@@ -1,8 +1,10 @@
 # Portfolio Website
 
+This portfolio website is built with Tailwind CSS and Next.js framework, a React based web application.
+
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```
 npm run dev
