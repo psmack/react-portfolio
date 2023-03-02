@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='background-image custom-img'>        
+    <div className='bg-img custom-img'>        
         {/* About Content */}
         <div className='page-format'>
             <h2 className='page-title'>About</h2>
