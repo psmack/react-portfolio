@@ -30,7 +30,7 @@ import icon_vscode from '../public/tech_stack/icon-vscode.png'
 
 const Techstack = () => {
   return (
-    <div className='background-image custom-img'> 
+    <div className='bg-img custom-img'> 
     {/* Tech Stack Content */}
       <div className='page-format'>
         <h2 className='page-title'>Tech Stack</h2>

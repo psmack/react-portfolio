@@ -8,7 +8,7 @@ const ProjectItem = ({ title, description, url }) => {
       <div className='repo-card'>
         <div className='repo-text-box'>
           <h4 className='repo-title'>{title}</h4>
-          <p>{description}</p>
+          <p className='repo-desc'>{description}</p>
           </div> 
           <Link href={url} className='github-box'>
             <AiFillGithub className='github-icon'/>

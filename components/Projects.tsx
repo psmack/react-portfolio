@@ -5,7 +5,7 @@ import ProjectItem from './ProjectItem'
 
 const Projects = () => {
   return (
-    <div className='background-image custom-img'> 
+    <div className='bg-img custom-img'> 
       {/* Projects Content */}
       <div className='page-format'>
         <h2 className='page-title'>Projects</h2>

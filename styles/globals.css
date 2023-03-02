@@ -13,10 +13,14 @@ html {
 }
 
 .custom-img {
+  background-image: url('https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
+}
+
+.img1 {
   background-image: url('https://images.unsplash.com/photo-1542259009477-d625272157b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80')
 }
 
-.background-image {
+.bg-img {
   @apply min-h-screen bg-cover bg-no-repeat bg-fixed bg-center;
 }
 
@@ -104,20 +108,24 @@ html {
   @apply text-3xl text-white font-bold text-center;
 }
 
-
-.repo-title {
-  @apply text-lg font-bold;
+.repo-text-box {
+  @apply flex flex-col px-1;
 }
 
 .repo-card {
   @apply p-3 m-3 flex justify-between items-center rounded shadow-xl bg-white;
 }
 
-.repo-text-box {
-  @apply flex flex-col;
+.repo-title {
+  @apply text-lg font-bold;
 }
+
+.repo-desc {
+  @apply text-sm;
+}
+
 .github-box {
-  @apply px-5;
+  @apply px-1;
 }
 
 .github-icon {
