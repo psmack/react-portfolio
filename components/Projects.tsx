@@ -1,109 +1,126 @@
 import React from 'react'
 import Link from 'next/link'
-import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import { AiFillGithub} from 'react-icons/ai'
 
 
 const Projects = () => {
   return (
-    <div className='flex items-center justify-center h-screen bg-fixed bg-cover custom-img'>
-        {/* Overlay */}
-        <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]'/>
-        
-        {/* Projects Content */}
-        <div className='p-5 text-white z-[2] mt-auto pt-28 sm:mt-40'>
-            <h2 className='text-5xl font-bold text-center'>Projects</h2>
-            <div className='grid grid-rows-none sm:grid-cols-2 sm:gap-y-0 sm:gap-x-4 sm:py-10'>
-            {/* <div className='grid grid-rows-none sm:grid-cols-2 px-4 pt-2 sm:gap-5 sm:px-10 sm:py-10 lg:px-36'> */}
-              {/* C Projects */}
-              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-5 w-80 sm:p-10 sm:my-10 sm:w-96'>
-              <h3 className='text-2xl font-bold text-center'>C Projects</h3>
-                <ul className="flex flex-col">
-                  <Link href='https://github.com/psmack/mastermind'>
-                    <li className='text-lg font-bold pt-2 hover:text-gray-500'>
-                      Mastermind
-                    </li></Link>
-                    <li className='text-sm'>
-                      Mastermind game written in C.
-                    </li>
-                </ul>
+    <div className='background-image custom-img'> 
+      {/* Projects Content */}
+      <div className='page-format'>
+        <h2 className='page-title'>Projects</h2>
+        <div className='projects-nonmobile-format'>
+          {/* C Projects */}
+          <div className='projects-format'>
+            <div className='projects-card'>
+              <h3 className='projects-topic'>C Projects</h3>
+              <div className='repo-card'>
+                <div className='repo-text-box'>
+                  <h4 className='repo-title'>Mastermind</h4>
+                  <p>
+                    Mastermind game written in C.
+                  </p>
+                </div> 
+                <Link href='https://github.com/psmack/mastermind' className='github-box'>
+                  <AiFillGithub className='github-icon'/>
+                </Link>
               </div>
-
-              {/* Data Analytics Projects */}
-              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-5 w-80 sm:p-10 sm:my-10 sm:w-96'>
-              <h3 className='text-2xl font-bold text-center'>Data Analytics</h3>
-                <ul className="flex flex-col">
-                  <Link href='https://github.com/psmack/python-dashboard-panel'>
-                    <li className='text-lg font-bold pt-2 hover:text-gray-500'>
-                    Dashboard Panel
-                    </li></Link>
-                    <li className='text-sm'>
-                    Interactive analytic visualization dashboard in Python.
-                    </li>
-                </ul>
-              </div>
-
-              {/* Python Projects */}
-              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-5 w-80 sm:p-10 sm:my-10 sm:w-96'>
-                <h3 className='text-2xl font-bold text-center'>Python Projects</h3>
-                <ul className="flex flex-col">
-                    <Link href='https://github.com/psmack/Python-Mini-Projects'>
-                    <li className='text-lg font-bold pt-2 hover:text-gray-500'>
-                      Python Mini Projects
-                    </li>
-                    </Link>
-                    <li className='text-sm'>
-                      Collection of simple scripts using various Python libraries.
-                    </li>
-                </ul>
-                <ul className="flex flex-col">
-                    <Link href='https://github.com/psmack/youtube_downloader'>
-                    <li className='text-lg font-bold pt-2 hover:text-gray-500'>
-                      Youtube Music Downloader
-                    </li>
-                    </Link>
-                    <li className='text-sm'>
-                      Download song or album from Youtube Music using pytube library.
-                    </li>
-                </ul>
-              </div>
-
-              {/* Web Dev */}
-              <div className='bg-white text-black rounded-xl shadow-lg p-4 my-5 w-80 sm:p-10 sm:my-10 sm:w-96'>
-              <h3 className='text-2xl font-bold text-center'>Web Dev</h3>
-                <ul className="flex flex-col">
-                  <Link href='https://github.com/psmack/alliance'>
-                    <li className='text-lg font-bold pt-2 hover:text-gray-500'>
-                      Alliance
-                    </li>
-                    </Link>
-                    <li className='text-sm'>
-                      Twitter clone application for the Rebel Alliance using Electron and Vue frameworks. Deployable on Web, Windows, and Andriod.
-                    </li>
-                </ul>
-                <ul className="flex flex-col">
-                  <Link href='https://github.com/psmack/react-portfolio'>
-                    <li className='text-lg font-bold pt-2 hover:text-gray-500'>
-                      Next.js React Website
-                    </li>
-                    </Link>
-                    <li className='text-sm'>
-                      Portfolio website using Next.js and Tailwind frameworks.
-                    </li>
-                </ul>
-                <ul className="flex flex-col">
-                  <Link href='https://github.com/psmack/react-pmcodes'>
-                    <li className='text-lg font-bold pt-2 hover:text-gray-500'>
-                      React Website
-                    </li></Link>
-                    <li className='text-sm'>
-                      Portfolio website using React framework.
-                    </li>
-                </ul>
-              </div>
-
-              
             </div>
-        </div>
+          </div>
+
+          {/* Data Analytics */}
+          <div className='projects-format'>
+            <div className='projects-card'>
+              <h3 className='projects-topic'>Data Analytics</h3>
+                <div className='repo-card'>
+                  <div className='repo-text-box'>
+                    <h4 className='repo-title'>Dashboard Panel</h4>
+                    <p>
+                    Interactive analytic visualization dashboard in Python.
+                    </p>
+                    </div> 
+                    <Link href='https://github.com/psmack/python-dashboard-panel' className='github-box'>
+                      <AiFillGithub className='github-icon'/>
+                    </Link>
+                </div> 
+            </div>
+          </div>
+        
+          {/* Python Projects */}
+          <div className='projects-format'>
+            <div className='projects-card'>
+              <h3 className='projects-topic'>Python Projects</h3>
+              <div className='repo-card'>
+                <div className='repo-text-box'>
+                  <h4 className='repo-title'>Python Mini Projects</h4>
+                  <p>
+                    Collection of simple scripts using various Python libraries.
+                  </p>
+                </div> 
+                <Link href='https://github.com/psmack/Python-Mini-Projects' className='github-box'>
+                  <AiFillGithub className='github-icon'/>
+                </Link>
+              </div> 
+
+              <div className='repo-card'>
+                <div className='repo-text-box'>
+                  <h4 className='repo-title'>Youtube Music Downloader</h4>
+                  <p>
+                  Download song or album from Youtube Music using pytube library.
+                  </p>
+                </div> 
+                <Link href='https://github.com/psmack/youtube_downloader' className='github-box'>
+                  <AiFillGithub className='github-icon'/>
+                </Link>
+              </div> 
+            </div>
+          </div>
+
+          {/* Web Dev */}
+          <div className='projects-format'>
+            <div className='projects-card'>
+              <h3 className='projects-topic'>Web Dev</h3>
+              <div className='repo-card'>
+                <div className='repo-text-box'>
+                  <h4 className='repo-title'>Alliance</h4>
+                  <p>
+                    Twitter clone application for the Rebel Alliance using Electron and Vue frameworks. Deployable on Web, Windows, and Andriod.
+                  </p>
+                </div> 
+                <Link href='https://github.com/psmack/alliance' className='github-box'>
+                  <AiFillGithub className='github-icon'/>
+                </Link>
+              </div> 
+
+              <div className='repo-card'>
+                <div className='repo-text-box'>
+                  <h4 className='repo-title'>Next.js Website</h4>
+                  <p>
+                    Portfolio website using Next.js and Tailwind frameworks.
+                  </p>
+                </div> 
+                <Link href='https://github.com/psmack/react-portfolio' className='github-box'>
+                  <AiFillGithub className='github-icon'/>
+                </Link>
+              </div>
+              <div className='repo-card'>
+                <div className='repo-text-box'>
+                  <h4 className='repo-title'>React Website</h4>
+                  <p>
+                    Portfolio website using React framework.
+                  </p>
+                </div> 
+                <Link href='https://github.com/psmack/react-pmcodes' className='github-box'>
+                  <AiFillGithub className='github-icon'/>
+                </Link>
+              </div> 
+            </div>
+          {/* End of Web Dev */}
+          </div> 
+        </div>    
+      {/* End of Projects Content */}
+      </div>
+    {/* End of Page */}
     </div>
   )
 }
