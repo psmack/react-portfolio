@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { FaCoffee } from "react-icons/fa"
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -14,22 +14,23 @@ const Navbar = () => {
   return (
     <div className='nav-format'>
         <div className='nav-menu'>
+            {/* Left side icon and title */}
             <Link className='flex flex-row' href='/'>
-                <h1 className='font-bold text-3xl py-2'><FaCoffee/></h1>
-                <h1 className='font-bold text-4xl '>PMCodes</h1>
+                <h1 className='py-2 font-bold text-2xl sm:text-3xl '><FaCoffee/></h1>
+                <h1 className='font-bold text-3xl sm:text-4xl '>PMCodes</h1>
             </Link>
             {/* Hide menu when in small screen. Show as flex in bigger screen */}
             <ul className='hidden sm:flex'>
-                <li className='p-4'>
+                <li className='nav-menu-item'>
                     <Link href='/'>Home</Link>
                 </li>
-                <li className='p-4'>
+                <li className='nav-menu-item'>
                     <Link href='/about'>About</Link>
                 </li>
-                <li className='p-4'>
+                <li className='nav-menu-item'>
                     <Link href='/projects'>Projects</Link>
                 </li>
-                <li className='p-4'>
+                <li className='nav-menu-item'>
                     <Link href='/techstack'>Tech Stack</Link>
                 </li>
             </ul>

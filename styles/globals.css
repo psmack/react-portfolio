@@ -28,8 +28,12 @@ html {
   @apply max-w-[1240x] m-auto flex justify-between items-center p-5 text-white;
 }
 
+.nav-menu-item {
+  @apply p-4 font-bold sm:text-lg md:text-xl hover:text-blue-300;
+}
+
 .nav-mobile-menu-item {
-  @apply p-4 text-4xl hover:text-gray-500;
+  @apply p-4 text-4xl hover:text-blue-300;
 }
 
 .nav-show-mobile-menu {
