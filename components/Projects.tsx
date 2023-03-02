@@ -40,7 +40,7 @@ const Projects = () => {
               <h3 className='projects-topic'>Python Projects</h3>
               <ProjectItem 
                 title='Python Mini Projects'
-                description='ICollection of simple scripts using various Python libraries.'
+                description='Collection of simple scripts using various Python libraries.'
                 url='https://github.com/psmack/Python-Mini-Projects'
               />
               <ProjectItem 
@@ -57,7 +57,7 @@ const Projects = () => {
               <h3 className='projects-topic'>Web Dev</h3>
               <ProjectItem 
                 title='Alliance'
-                description='Twitter clone application for the Rebel Alliance using Electron and Vue frameworks. Deployable on Web, Windows, and Andriod.'
+                description='Twitter clone application for the Rebel Alliance using Electron and Vue frameworks.'
                 url='https://github.com/psmack/alliance'
               />
               <ProjectItem 

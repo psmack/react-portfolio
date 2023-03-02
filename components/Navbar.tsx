@@ -16,8 +16,8 @@ const Navbar = () => {
         <div className='nav-menu'>
             {/* Left side icon and title */}
             <Link className='flex flex-row' href='/'>
-                <h1 className='py-2 font-bold text-2xl sm:text-3xl '><FaCoffee/></h1>
-                <h1 className='font-bold text-3xl sm:text-4xl '>PMCodes</h1>
+                <h1 className='py-2 font-bold text-2xl sm:text-3xl'><FaCoffee/></h1>
+                <h1 className='font-bold text-3xl sm:text-4xl'>PMCodes</h1>
             </Link>
             {/* Hide menu when in small screen. Show as flex in bigger screen */}
             <ul className='hidden sm:flex'>
