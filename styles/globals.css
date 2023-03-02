@@ -15,3 +15,50 @@ html {
 .custom-img {
   background-image: url('https://images.unsplash.com/photo-1542259009477-d625272157b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80')
 }
+
+.background-image {
+  @apply min-h-screen bg-cover bg-no-repeat bg-fixed bg-center;
+}
+
+.nav-format {
+  @apply bg-black text-white fixed left-0 top-0 w-full z-10;
+}
+
+.nav-menu {
+  @apply max-w-[1240x] m-auto flex justify-between items-center p-5 text-white;
+}
+
+.nav-mobile-menu-item {
+  @apply p-4 text-4xl hover:text-gray-500;
+}
+
+.nav-show-mobile-menu {
+  @apply sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300;
+}
+
+.nav-hide-mobile-menu {
+  @apply sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300;
+}
+
+.page-title {
+  @apply text-5xl font-bold text-center mb-10;
+}
+
+.page-format {
+  @apply p-5 text-white z-[3] pt-28 sm:mt-24;
+}
+
+.about-format {
+  @apply h-full flex items-center justify-center;
+}
+.about-card {
+  @apply w-72 bg-white text-black rounded-xl shadow-lg p-4 my-4 sm:w-96;
+}
+
+.about-topic {
+  @apply text-2xl font-bold;
+}
+
+.about-school-cert {
+  @apply text-lg font-bold pt-2;
+}
