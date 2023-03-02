@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { AiFillGithub} from 'react-icons/ai'
 import ProjectItem from './ProjectItem'
+import Image from 'next/image'
 
 const Projects = () => {
   return (
@@ -55,11 +56,20 @@ const Projects = () => {
           <div className='projects-format'>
             <div className='projects-card'>
               <h3 className='projects-topic'>Web Dev</h3>
-              <ProjectItem 
+              <div className='repo-card '>
+                <h4 className='repo-title'>Alliance</h4>
+                <div className='repo-text-box'>
+                  <p className='repo-desc'>Twitter clone application for the Rebel Alliance using Electron and Vue frameworks.</p>
+                  <Link href='https://github.com/psmack/alliance' className='github-box'>
+                    <Image src='/alliance.png' alt='Rebel Alliance' width={150} height={150} className='pb-3'/>
+                  </Link>
+                </div> 
+              </div>
+              {/* <ProjectItem 
                 title='Alliance'
                 description='Twitter clone application for the Rebel Alliance using Electron and Vue frameworks.'
                 url='https://github.com/psmack/alliance'
-              />
+              /> */}
               <ProjectItem 
                 title='Next.js Website'
                 description='Portfolio website using Next.js and Tailwind frameworks.'
