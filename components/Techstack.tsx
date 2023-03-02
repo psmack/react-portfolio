@@ -38,8 +38,8 @@ const Techstack = () => {
           {/* Languages */}
           <div className='techstack-format'>
             <div className='techstack-card'>
-              <h3 className='text-2xl font-bold text-center'>Languages</h3>
-              <div className='flex justify-center flex-wrap gap-2 py-5'>
+              <h3 className='techstack-topic'>Languages</h3>
+              <div className='techstack-items'>
                 <Image src={icon_c} alt="" />
                 <Image src={icon_python} alt="" />
                 <Image src={icon_sql} alt="" />
@@ -54,8 +54,8 @@ const Techstack = () => {
           {/* Learning */}
           <div className='techstack-format'>
             <div className='techstack-card'>
-              <h3 className='text-2xl font-bold text-center'>Learning</h3>
-              <div className='flex justify-center flex-wrap gap-2 py-5'>
+              <h3 className='techstack-topic'>Learning</h3>
+              <div className='techstack-items'>
                 <Image src={icon_django} alt="Django" />
                 <Image src={icon_flask} alt="Flask" />
                 <Image src={icon_php} alt="PHP" />
@@ -67,8 +67,8 @@ const Techstack = () => {
           {/* Frameworks */}
           <div className='techstack-format'>
             <div className='techstack-card'>
-              <h3 className='text-2xl font-bold text-center'>Frameworks</h3>
-              <div className='flex justify-center flex-wrap gap-2 py-5'>
+              <h3 className='techstack-topic'>Frameworks</h3>
+              <div className='techstack-items'>
                 <Image src={icon_electron} alt="Electron" />
                 <Image src={icon_nextjs} alt="NextJS" />
                 <Image src={icon_react} alt="React" />
@@ -81,8 +81,8 @@ const Techstack = () => {
           {/* Platforms and Tools */}
           <div className='techstack-format'>
             <div className='techstack-card'>
-              <h3 className='text-2xl font-bold text-center'>Platforms and Tools</h3>
-              <div className='flex justify-center flex-wrap gap-2 py-5'>
+              <h3 className='techstack-topic'>Platforms and Tools</h3>
+              <div className='techstack-items'>
                 <Image src={icon_docker} alt="Docker" />
                 <Image src={icon_git} alt="Git" />
                 <Image src={icon_nodejs} alt="NodeJS" />
